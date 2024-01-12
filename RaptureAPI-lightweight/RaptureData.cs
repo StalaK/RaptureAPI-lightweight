@@ -10,6 +10,6 @@ public class RaptureData
     {
         var raptureJson = File.ReadAllText("raptureData/rapture-data.json");
 
-        Raptures = JsonSerializer.Deserialize<List<Rapture>>(raptureJson) ?? [];
+        Raptures = JsonSerializer.Deserialize<List<Rapture>>(raptureJson, options: new() { PropertyNameCaseInsensitive = true }) ?? [];
     }
 }
