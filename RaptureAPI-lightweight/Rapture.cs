@@ -2,8 +2,6 @@
 
 public class Rapture
 {
-    public int Id { get; set; }
-
     public DateTime RaptureStartDate { get; set; }
 
     public DateTime RaptureEndDate { get; set; }
