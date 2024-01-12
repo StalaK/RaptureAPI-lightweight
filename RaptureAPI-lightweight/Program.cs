@@ -25,7 +25,7 @@ public class Program
             {
                 options.PermitLimit = 100;
                 options.Window = TimeSpan.FromSeconds(60);
-                options.QueueProcessingOrder = QueueProcessingOrder.OldestFirst,
+                options.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
                 options.QueueLimit = 5;
             });
         });
